@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f5ef;
+    color: #51443c;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(35, 28, 24, 0.35),
+            rgba(35, 28, 24, 0.35)
+        ),
+        linear-gradient(135deg, #a89b88, #e8ddcd);
+
+    color: white;
+
+    padding: 30px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.eyebrow,
+.section-label {
+    letter-spacing: 4px;
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(65px, 10vw, 110px);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    font-style: italic;
+}
+
+.subtitle {
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.divider {
+    width: 65px;
+    height: 1px;
+    background: white;
+    margin: 35px auto;
+}
+
+.wedding-date {
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+.discover-btn {
+    display: inline-block;
+    margin-top: 45px;
+    padding: 15px 30px;
+
+    border: 1px solid white;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+}
+
+.discover-btn:hover {
+    background: white;
+    color: #51443c;
+}
+
+/* INVITATION */
+
+.invitation {
+    padding: 120px 25px;
+    text-align: center;
+}
+
+.invitation h2,
+.countdown-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.invitation-text {
+    font-size: 14px;
+    line-height: 2.2;
+    max-width: 550px;
+    margin: auto;
+}
+
+/* COUNTDOWN */
+
+.countdown-section {
+    padding: 100px 20px;
+    background: #eee7dc;
+    text-align: center;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#countdown div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#countdown span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+}
+
+#countdown small {
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 70px 20px;
+    text-align: center;
+    line-height: 2.5;
+}
+
+footer h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 90vh;
+    }
+
+    .invitation {
+        padding: 80px 20px;
+    }
+
+    .invitation h2,
+    .countdown-section h2 {
+        font-size: 42px;
+    }
+
+    #countdown {
+        gap: 25px;
+    }
+
+}
