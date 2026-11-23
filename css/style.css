@@ -1,3 +1,7 @@
+/* ==================================
+   GLOBAL RESET
+================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,180 +13,117 @@ html {
 }
 
 body {
-    background: #f8f5ef;
-    color: #51443c;
+    min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
+
+    background-color: #f6f0e7;
+
+    color: #514239;
+
+    overflow-x: hidden;
 }
 
-/* HERO SECTION */
+button {
+    font: inherit;
+}
 
-.hero {
-    min-height: 100vh;
+/* ==================================
+   COLOR VARIABLES
+================================== */
+
+:root {
+
+    --ivory: #f6f0e7;
+
+    --champagne: #e9dcc7;
+
+    --gold: #b89a67;
+
+    --dark-gold: #927346;
+
+    --burgundy: #762d3c;
+
+    --dark-brown: #514239;
+
+    --cream: #fffaf2;
+
+    --serif: 'Cormorant Garamond', serif;
+
+    --sans: 'Montserrat', sans-serif;
+
+}
+
+/* ==================================
+   BACKGROUND MUSIC CONTROL
+================================== */
+
+.music-toggle {
+
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    border: 1px solid var(--gold);
+
+    background: var(--cream);
+
+    color: var(--burgundy);
+
+    font-size: 23px;
 
     display: flex;
-    justify-content: center;
+
     align-items: center;
 
-    text-align: center;
-
-    background:
-        linear-gradient(
-            rgba(35, 28, 24, 0.35),
-            rgba(35, 28, 24, 0.35)
-        ),
-        linear-gradient(135deg, #a89b88, #e8ddcd);
-
-    color: white;
-
-    padding: 30px;
-}
-
-.hero-content {
-    max-width: 800px;
-}
-
-.eyebrow,
-.section-label {
-    letter-spacing: 4px;
-    font-size: 11px;
-    margin-bottom: 25px;
-}
-
-.hero h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(65px, 10vw, 110px);
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-.hero h1 span {
-    font-style: italic;
-}
-
-.subtitle {
-    font-size: 11px;
-    letter-spacing: 3px;
-}
-
-.divider {
-    width: 65px;
-    height: 1px;
-    background: white;
-    margin: 35px auto;
-}
-
-.wedding-date {
-    letter-spacing: 5px;
-    font-size: 14px;
-}
-
-.discover-btn {
-    display: inline-block;
-    margin-top: 45px;
-    padding: 15px 30px;
-
-    border: 1px solid white;
-
-    color: white;
-    text-decoration: none;
-
-    font-size: 10px;
-    letter-spacing: 2px;
-
-    transition: 0.3s;
-}
-
-.discover-btn:hover {
-    background: white;
-    color: #51443c;
-}
-
-/* INVITATION */
-
-.invitation {
-    padding: 120px 25px;
-    text-align: center;
-}
-
-.invitation h2,
-.countdown-section h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 55px;
-    font-weight: 400;
-    margin-bottom: 35px;
-}
-
-.invitation-text {
-    font-size: 14px;
-    line-height: 2.2;
-    max-width: 550px;
-    margin: auto;
-}
-
-/* COUNTDOWN */
-
-.countdown-section {
-    padding: 100px 20px;
-    background: #eee7dc;
-    text-align: center;
-}
-
-#countdown {
-    display: flex;
     justify-content: center;
-    gap: 45px;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
 
-#countdown div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+    cursor: pointer;
 
-#countdown span {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 50px;
-}
+    opacity: 0;
 
-#countdown small {
-    letter-spacing: 2px;
-    font-size: 10px;
-}
+    visibility: hidden;
 
-/* FOOTER */
+    transform: scale(0.8);
 
-footer {
-    padding: 70px 20px;
-    text-align: center;
-    line-height: 2.5;
-}
+    transition: all 0.4s ease;
 
-footer h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 45px;
-}
+    z-index: 100;
 
-/* MOBILE */
-
-@media (max-width: 600px) {
-
-    .hero {
-        min-height: 90vh;
-    }
-
-    .invitation {
-        padding: 80px 20px;
-    }
-
-    .invitation h2,
-    .countdown-section h2 {
-        font-size: 42px;
-    }
-
-    #countdown {
-        gap: 25px;
-    }
+    box-shadow: 0 4px 15px rgba(60, 40, 20, 0.12);
 
 }
+
+.music-toggle.visible {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: scale(1);
+
+}
+
+.music-toggle:hover {
+
+    background: var(--burgundy);
+
+    color: white;
+
+}
+
+.music-toggle.paused {
+
+    background: #eee5d8;
+
+    color: #897456;
+
+}
+

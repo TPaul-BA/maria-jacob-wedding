@@ -1,0 +1,860 @@
+/* ==================================
+   INVITATION SCREEN
+================================== */
+
+.invitation-screen {
+
+    justify-content: center;
+
+    padding: 45px 20px;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            #fffdf8,
+            #eee5d8
+        );
+
+}
+
+.invitation-screen.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+/* ==================================
+   INVITATION CARD
+================================== */
+
+.invitation-card {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 680px;
+
+    min-height: 1050px;
+
+    padding: 90px 75px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #fffdf8,
+            #f8f1e7
+        );
+
+    border: 1px solid #d7c39e;
+
+    box-shadow:
+
+        0 20px 60px rgba(65, 45, 25, 0.13),
+
+        0 4px 12px rgba(65, 45, 25, 0.06);
+
+    text-align: center;
+
+    color: var(--dark-brown);
+
+}
+
+
+/* Inner Border */
+
+.card-inner-border {
+
+    position: absolute;
+
+    inset: 14px;
+
+    border: 1px solid rgba(184, 154, 103, 0.55);
+
+    pointer-events: none;
+
+}
+
+
+/* ==================================
+   HEADER
+================================== */
+
+.card-header {
+
+    margin-bottom: 45px;
+
+}
+
+.card-eyebrow {
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: var(--dark-gold);
+
+    line-height: 2;
+
+}
+
+.ornament {
+
+    font-size: 24px;
+
+    color: var(--gold);
+
+    margin: 25px 0;
+
+}
+
+.invitation-heading {
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #897456;
+
+}
+
+
+/* ==================================
+   COUPLE NAMES
+================================== */
+
+.couple-section {
+
+    margin: 35px 0;
+
+}
+
+.couple-section h1 {
+
+    font-family: var(--serif);
+
+    font-size: clamp(55px, 9vw, 85px);
+
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    color: #514239;
+
+}
+
+.ampersand {
+
+    display: block;
+
+    font-family: var(--serif);
+
+    font-size: 43px;
+
+    font-style: italic;
+
+    color: var(--gold);
+
+    margin: 15px 0;
+
+}
+
+
+/* ==================================
+   INVITATION MESSAGE
+================================== */
+
+.invitation-message {
+
+    max-width: 440px;
+
+    margin: 40px auto;
+
+    font-size: 12px;
+
+    font-weight: 300;
+
+    line-height: 2.2;
+
+    color: #74675b;
+
+}
+
+.invitation-message p + p {
+
+    margin-top: 15px;
+
+}
+
+
+/* ==================================
+   DIVIDERS
+================================== */
+
+.section-divider {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin: 35px 0;
+
+    color: var(--gold);
+
+    font-size: 20px;
+
+}
+
+.section-divider::before,
+.section-divider::after {
+
+    content: "";
+
+    width: 65px;
+
+    height: 1px;
+
+    background: #d7c39e;
+
+}
+
+
+/* ==================================
+   EVENT SECTIONS
+================================== */
+
+.event-section {
+
+    padding: 15px 0;
+
+}
+
+.event-label {
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: var(--dark-gold);
+
+    margin-bottom: 18px;
+
+}
+
+.event-section h2 {
+
+    font-family: var(--serif);
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+    color: #514239;
+
+}
+
+.event-time {
+
+    font-family: var(--serif);
+
+    font-size: 24px;
+
+    margin-top: 8px;
+
+    color: var(--dark-gold);
+
+}
+
+.event-description {
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    margin-top: 12px;
+
+    color: #827365;
+
+}
+
+
+/* ==================================
+   FOOTER
+================================== */
+
+.card-footer {
+
+    margin-top: 50px;
+
+}
+
+.card-footer > p:first-of-type {
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: var(--dark-gold);
+
+}
+
+.card-footer h3 {
+
+    font-family: var(--serif);
+
+    font-size: 37px;
+
+    font-weight: 400;
+
+    margin: 20px 0;
+
+}
+
+.footer-note {
+
+    font-size: 11px;
+
+    font-style: italic;
+
+    color: #897d70;
+
+}
+
+/* ==================================
+   ENGAGEMENT EVENT
+================================== */
+
+.engagement-event {
+
+    margin-top: 45px;
+
+}
+
+.event-ornament {
+
+    color: var(--gold);
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ==================================
+   VENUE CONTAINER
+================================== */
+
+.venue-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 45px;
+
+}
+
+
+/* ==================================
+   VENUE CARD
+================================== */
+
+.venue-card {
+
+    padding: 30px 18px;
+
+    background: rgba(255, 255, 255, 0.55);
+
+    border: 1px solid rgba(184, 154, 103, 0.45);
+
+    transition:
+
+        transform 0.3s ease,
+
+        box-shadow 0.3s ease;
+
+}
+
+.venue-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(80, 60, 40, 0.08);
+
+}
+
+
+/* ==================================
+   VENUE ICON
+================================== */
+
+.venue-icon {
+
+    font-size: 28px;
+
+    color: var(--gold);
+
+    margin-bottom: 18px;
+
+}
+
+.venue-label {
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: var(--dark-gold);
+
+    margin-bottom: 14px;
+
+}
+
+.venue-card h3 {
+
+    font-family: var(--serif);
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    color: var(--dark-brown);
+
+}
+
+.venue-time {
+
+    font-family: var(--serif);
+
+    font-size: 21px;
+
+    color: var(--dark-gold);
+
+    margin-top: 10px;
+
+}
+
+.venue-description {
+
+    font-size: 10px;
+
+    line-height: 1.9;
+
+    color: #827365;
+
+    margin: 18px 0 22px;
+
+}
+
+
+/* ==================================
+   MAP BUTTON
+================================== */
+
+.location-button {
+
+    display: inline-block;
+
+    padding: 12px 14px;
+
+    border: 1px solid var(--gold);
+
+    color: var(--dark-gold);
+
+    text-decoration: none;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease;
+
+}
+
+.location-button span {
+
+    font-size: 13px;
+
+    margin-right: 5px;
+
+}
+
+.location-button:hover {
+
+    background: var(--dark-gold);
+
+    color: white;
+
+}
+
+/* ==================================
+   WEDDING EVENT
+================================== */
+
+.wedding-event {
+
+    margin-top: 65px;
+
+    padding-top: 35px;
+
+    border-top: 1px solid rgba(184, 154, 103, 0.3);
+
+}
+
+.wedding-ornament {
+
+    color: var(--burgundy);
+
+}
+
+.wedding-label {
+
+    color: var(--burgundy);
+
+}
+
+/* Wedding venue cards */
+
+.wedding-venue-container {
+
+    margin-top: 45px;
+
+}
+
+.wedding-venue-card {
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.75),
+            rgba(247, 238, 226, 0.85)
+        );
+
+    border-color: rgba(118, 45, 60, 0.25);
+
+}
+
+.wedding-venue-card .venue-icon {
+
+    color: var(--burgundy);
+
+}
+
+.wedding-venue-card .venue-label {
+
+    color: var(--burgundy);
+
+}
+
+.wedding-venue-card .venue-time {
+
+    color: var(--burgundy);
+
+}
+
+/* Wedding location buttons */
+
+.wedding-venue-card .location-button {
+
+    border-color: var(--burgundy);
+
+    color: var(--burgundy);
+
+}
+
+.wedding-venue-card .location-button:hover {
+
+    background: var(--burgundy);
+
+    color: white;
+
+}
+
+/* ==================================
+   CLOSING ORNAMENT
+================================== */
+
+.closing-ornament {
+    position: relative;
+    width: 140px;
+    height: 1px;
+    margin: 38px auto 10px;
+    background: rgba(184, 154, 103, 0.55);
+}
+
+.closing-ornament::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: var(--gold);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* ==================================
+   COUNTDOWN SECTION
+================================== */
+
+.countdown-section {
+
+    margin: 45px 0;
+
+    padding: 35px 15px;
+
+    background: rgba(233, 220, 199, 0.25);
+
+    border-top: 1px solid rgba(184, 154, 103, 0.35);
+
+    border-bottom: 1px solid rgba(184, 154, 103, 0.35);
+
+}
+
+.countdown-heading {
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: var(--dark-gold);
+
+    margin-bottom: 35px;
+
+}
+
+
+/* Event headings */
+
+.countdown-event h3 {
+
+    font-family: var(--serif);
+
+    font-size: 36px;
+
+    font-weight: 400;
+
+    color: var(--dark-brown);
+
+    margin: 12px 0;
+
+}
+
+.countdown-event-label {
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: var(--dark-gold);
+
+}
+
+.countdown-date {
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #8b7962;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Timer layout */
+
+.countdown-timer {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    flex-wrap: wrap;
+
+}
+
+.countdown-unit {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    min-width: 55px;
+
+}
+
+.countdown-unit span {
+
+    font-family: var(--serif);
+
+    font-size: 38px;
+
+    color: var(--burgundy);
+
+    font-weight: 500;
+
+}
+
+.countdown-unit small {
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    color: var(--dark-gold);
+
+    margin-top: 5px;
+
+}
+
+
+/* Divider */
+
+.countdown-divider {
+
+    color: var(--gold);
+
+    margin: 35px 0;
+
+    font-size: 20px;
+
+}
+
+.event-started {
+
+    font-family: var(--serif);
+
+    font-size: 24px;
+
+    font-style: italic;
+
+    color: var(--burgundy);
+
+    padding: 15px;
+
+}
+
+/* ==================================
+   INVITATION ENTRANCE ANIMATION
+================================== */
+
+.invitation-card {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+}
+
+.invitation-screen.active .invitation-card {
+
+    animation: invitationAppear 1.2s ease both;
+
+}
+
+@keyframes invitationAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ==================================
+   EVENT ANIMATIONS
+================================== */
+
+.venue-card {
+
+    animation: venueAppear 0.9s ease both;
+
+}
+
+.venue-card:nth-child(2) {
+
+    animation-delay: 0.2s;
+
+}
+
+@keyframes venueAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ==================================
+   DECORATIVE ORNAMENTS
+================================== */
+
+.ornament,
+.event-ornament,
+.closing-ornament {
+
+    animation: ornamentFloat 4s ease-in-out infinite;
+
+}
+
+@keyframes ornamentFloat {
+
+    0%, 100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-4px);
+
+    }
+
+}
